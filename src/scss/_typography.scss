@@ -1,49 +1,43 @@
-body{
+.frontend {
+    
+    font-family: $font-primary;
 
-    &:not(.wp-admin), &:not(.wp-customizer){
-        
-        font-family: $font-primary;
-
-        p{
-            font-size: 1.25rem;
-            line-height: 2rem;
-            margin-bottom: 30px;
-        }
-        
-        h1{
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-        
-        h2{
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
+    p{
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-bottom: 30px;
     }
+    
+    h1{
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    
+    h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
 }
 
 
+
 @media screen and (max-width: $breakpoint-tablet) {
+    
+    .frontend {
 
-    body{
+        p{
+            font-size: 1rem;
+            line-height: 1.375rem;
+        }
 
-        &:not(.wp-admin){
+        h1{
+            font-size: 2.5rem;
+        }
 
-            p{
-                font-size: 1rem;
-                line-height: 1.375rem;
-            }
-
-            h1{
-                font-size: 2.5rem;
-            }
-
-            h2{
-                font-size: 1.875rem;
-            }
-
+        h2{
+            font-size: 1.875rem;
         }
 
     }
@@ -53,14 +47,10 @@ body{
 
 @media screen and (max-width: $breakpoint-phone){
 
-    body{
+    .frontend {
 
-        &:not(.wp-admin){
-
-            h1, h2{
-                text-align: center;
-            }
-
+        h1, h2{
+            text-align: center;
         }
 
     }

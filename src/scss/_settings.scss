@@ -1,21 +1,16 @@
 // STYLING RESET
 
-body{
+.frontend {
 
-    &:not(.wp-admin), &:not(.wp-customizer){
-
-        *{
-            box-sizing: border-box;
-            color: inherit;
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-        }
-
+    *{
+        box-sizing: border-box;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
     }
-    
-}
 
+}
 
 // VARIABLES
 

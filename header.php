@@ -7,7 +7,7 @@
     <title><?php wp_title('') ? wp_title('') : bloginfo(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="frontend">
 
     <header class="header">
         <div class="container header__container">
