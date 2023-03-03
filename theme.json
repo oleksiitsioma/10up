@@ -1,0 +1,42 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                { "name": "Black", "slug": "black", "color": "#000000" },
+                { "name": "White", "slug": "white", "color": "#FFFFFF" },
+                { "name": "Dark Gray", "slug": "darkgray", "color": "#081523" },
+                { "name": "Electric Green", "slug": "electricgreen", "color": "#01FDAB" },
+                { "name": "Blue", "slug": "blue", "color": "#0262F0" },
+                { "name": "Night", "slug": "night", "color": "#010203" }
+            ],
+			"gradients": [
+				{
+					"slug": "nightsky",
+					"gradient": "linear-gradient(#091523 , #0E253F)",
+					"name": "Nightsky"
+				}
+			]
+        },
+        "blocks": {
+            "core/paragraph": {
+                "color": {
+                    "palette": [
+                        { "name": "Dark Gray", "slug": "darkgray", "color": "#081523" }
+                    ]
+                }
+            },
+            "core/heading": {
+                "color": {
+                    "palette": [
+                        { "name": "Dark Gray", "slug": "darkgray", "color": "#081523" }
+                    ]
+                }
+            }
+        },
+		"layout": {
+			"contentSize": "900px",
+			"wideSize": "1600px"
+		}
+    }
+}

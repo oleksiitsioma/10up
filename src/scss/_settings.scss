@@ -1,0 +1,35 @@
+// STYLING RESET
+
+*{
+    box-sizing: border-box;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+// VARIABLES
+
+    // COLORS
+
+    $darkgray: #081523;
+    $electricgreen: #01FDAB;
+    $blue: #0262F0;
+    $night: #010203;
+
+    //  FONTS
+
+    $font-primary: 'Montserrat';
+    $font-highlight: 'Cousine';
+
+    // MAX MEDIA BREAKPOINTS
+
+    $breakpoint-phone: 768px;
+    $breakpoint-tablet: 1200px;
+
+    // ANIMATIONS
+
+    @mixin animation-standard{
+        transition: all 0.2s ease;
+    }

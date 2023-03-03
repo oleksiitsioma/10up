@@ -1,0 +1,136 @@
+.pageSection{
+
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 1;
+
+    &:first-child{
+        padding-top: 200px;
+    }
+
+    &_gradientBG{
+
+        background: linear-gradient(#091523, #0E253F);
+        
+        *{
+            color: white;
+        }
+    }
+
+    &__imageBG{
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    &__cutImg{
+        padding-bottom: 0;
+        z-index: 0;
+        margin-bottom: -50px;
+    }
+
+    &__h1{
+
+    }
+
+    &__h2{
+
+    }
+
+    &__subtitle{
+        font-family: $font-highlight;
+        font-size: 0.875rem;
+        margin-bottom: 15px;
+    }
+
+}
+
+.sparklesBackground{
+
+    position: relative;
+    text-align: center;
+
+    &:before{
+        position: absolute;
+        background-image: url('./img/sparkles.png');
+        content: '';
+        display: block;
+        width: calc(100% + 150px);
+        height: calc( 100% + 300px);
+        bottom: 0;
+        left: -75px;
+        background-size: 100% 100%;
+        z-index: 0;
+    }
+
+    img{
+        width: 75%;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: $breakpoint-tablet){
+
+    .pageSection{
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &:first-child{
+            padding-top: 150px;
+        }
+
+        &__cutImg{
+            padding-bottom: 50px;
+            margin-bottom: 0px;
+        }
+
+    }
+
+    .sparklesBackground{
+
+        &::before{
+            display: none;
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: $breakpoint-phone) {
+
+    .pageSection{
+
+        &:first-child{
+            padding-top: 100px;
+        }
+
+        p.pageSection__subtitle{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .sparklesBackground{
+
+        &::before{
+            display: none;
+        }
+
+    }
+
+}

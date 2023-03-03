@@ -1,0 +1,74 @@
+body{
+    overflow-x: hidden;
+}
+
+// CONTAINER
+
+.container{
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1340px;
+    position: relative;
+    padding: 0 20px;
+
+    &_fullwidth{
+        max-width: none;
+    }
+
+    &_centered{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+// GRID
+
+.columnGrid{
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+
+    &_verticalAlign{
+        align-items: center;
+    }
+
+    &__column{
+
+        grid-column-start: auto;
+
+        @for $i from 1 through 12 {
+            &_#{$i} {
+                grid-column-end: span #{$i};
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-phone) {
+
+    .columnGrid{
+
+        display: block;
+
+        &__column{
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .body{
+
+        &_menuOpen{
+            height: 100vh;
+            overflow: hidden;       
+        }
+        
+    }
+
+}

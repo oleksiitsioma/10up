@@ -1,0 +1,97 @@
+.btnGroup{
+
+    display: flex;
+
+    &_centered{
+        justify-content: center;
+    }
+
+    & > *{
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+
+    }
+
+    .btn{
+
+        font-size: 1.25rem;
+        border: 2px solid;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        height: 60px;
+        line-height: 56px;
+        padding: 0 30px;
+        @include animation-standard;
+
+        &:hover{
+            color: $electricgreen!important;
+            border-color: $electricgreen;
+        }
+    }
+
+    .link{
+    
+        font-size: 1.25rem;
+        position: relative;
+        height: 60px;
+        display: inline-block;
+        line-height: 60px;
+        text-decoration-line: solid;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 7px;
+        text-decoration-color: white;
+        @include animation-standard;
+
+        &:hover{
+            text-decoration-color: $electricgreen;
+        }
+    
+    }
+
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+// @media screen and (max-width: $breakpoint-tablet) {
+@media (hover:none){
+
+    .btnGroup{
+
+        .btn, .link{
+
+            &.has-white-color{
+    
+                &:hover{
+                    color: white!important;
+                    border-color: white!important;
+                    text-decoration-color: white!important;
+                }
+                
+            }
+    
+        }
+
+    }
+
+}
+
+@media screen and (max-width: $breakpoint-phone){
+
+    .btnGroup{
+
+        flex-direction: column;
+        align-items: center;
+
+        & > *{
+            margin-right: 0!important;
+        }
+
+    }
+}
