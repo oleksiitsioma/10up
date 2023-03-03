@@ -15,5 +15,7 @@ For CSS preprocessing i use SCSS and usually try to make my code as dynamic as p
 ## File Structure 
 
 *src* - source assets (js, scss, img, fonts)
+
 *build* - files distribution for the app use
+
 *inc* - php assets library
