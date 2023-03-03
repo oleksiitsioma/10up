@@ -30,3 +30,7 @@ For CSS preprocessing i use SCSS and usually try to make my code as dynamic as p
 4. Add Logo and Menu through Appearance -> Customization area of the admin dashboard.
 
 You can also use *npm run dev* to enable webpack watcher and auto-compiling of your code.
+
+## Additional Information
+
+As this is a WordPress theme and not a basic html template, I used some of the built-in WordPress styles, or styles defined by the theme settings added through *theme.json* file. As an upgrade, I would create a custom Gutenberg block for page sections. Another option is to use 'core/cover' blocks for page sections.
