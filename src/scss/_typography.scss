@@ -1,6 +1,6 @@
 body{
 
-    &:not(.wp-admin){
+    &:not(.wp-admin), &:not(.wp-customizer){
         
         font-family: $font-primary;
 
